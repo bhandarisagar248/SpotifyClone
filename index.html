@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link  rel="StyleSheet" href="index.css">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="left">
+
+        <div class="upper">
+
+            <div class="logo">
+                <a><img class="invert" src="logo.svg" alt="logo"></a> 
+            </div>
+            <div class="home">
+                <ul>
+                    <li><img class="invert" src="Home.svg" alt="Logo Here"><a>Home</a></li>
+                    <li><img class="invert" src="Search.svg" alt="Search"><a>Search</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div class="lower">
+            <div class="library">
+
+                <div class="addbtn">
+                    
+                        <button id="lib"><img class="invert invert_invert" src="library.svg" alt="Add library" height="30px" width="25px"><span>Your Library</span></button>
+
+                        <button id="add_add"><label for="add"><img class="invert" height="20px" width="20px" src="add.svg" alt="Add library"></label></button>
+                       <input type="file" webkitdirectory multiple accept=".mp3,.ogg,.wav" id="add"> 
+
+                       <!-- <button id="add" height="40px" width="40px" onclick="add_new_Library()"><img class="invert" height="20px" width="20px" src="add.svg" alt="Add library"></button> -->
+    
+                </div>
+            </div>
+        
+
+        <div class="card">
+        
+            
+             <section id="top"><div class="top"><h4>Create Your Play list</h4><br><h5>It's easy,we'll help you </h5></div>
+            <button id="playlist"><label for="add"><span>Create a playlist</span></label></button></section>
+            
+<!--             
+            <section id="bottom"><div class="top"><h4>Let's find some Podcast to follow</h4><br><h5>We'll keep you update on new eposides </h5></div>
+                <button id="playlist"><span>Create a playlist</span></section> -->
+        </div>
+
+
+
+
+
+        <div class="bottom">
+
+            <ol>
+                <li><a href="https://www.spotify.com/np-en/legal/end-user-agreement/">Legal</a></li>
+                <li><a href="https://www.spotify.com/np-en/legal/privacy-policy/">Privacy Policy</a></li>
+                <li><a href="https://www.spotify.com/np-en/legal/cookies-policy/">Cookies</a></li>
+                <li><a href="https://www.spotify.com/np-en/legal/privacy-policy/#s3">About</a></li>
+                <li><a href="https://www.spotify.com/np-en/accessibility">Accessibility</a></li>
+                <li><a href="https://www.spotify.com/np-en/safetyandprivacy">Safety and Privacy Center</a></li>
+               
+            </ol>
+
+               <div class="language">
+                   <button id="language"><span id="globe"><img src="globe.svg" alt="globe"></span>English</button>
+                </div>
+
+        </div>
+        
+    </div>
+</div>
+   
+
+    <div class="right">
+
+        <header id="bar">
+            <span class="arrow">
+                <button ><img src="left.svg" alt="left" height="30px" width="30px"></button>
+                <button ><img src="right.svg" alt="left" height="30px" width="30px"></button>
+            </span>
+            <span class="button">
+            <button class="signup">Signup</button>
+            <button class="login">Log in</button>
+            </span> 
+        </header>
+
+
+   <div class="playlist">
+    <h1 id="playlist_heading">Spotify Playlists</h1>
+
+    <div id="grid">
+
+<!--     
+    <div class="parent">
+        <img id="playbutton" src="playbutton.svg" alt="playbutton" height="" width="">
+
+        <div class="view_Card">
+            
+            <div class="image">
+                <img id="song_image" style="border-radius: 6px;" src="https://i.scdn.co/image/ab67706f00000002ab09371a616348f3fad1cfd2" alt="image" height="100%" width="100%">
+                
+                
+            </div>
+     </div>
+
+     <div class="bottom_banner">
+         <span id="banner"><h4 id="Artist_name">Throwback Thursday</h4>
+            <div id="Description">#SpotifyTBT takes you back to the r&b scene of the late 90s. Cover: Destiny's Child</div></span>
+            
+        </div>
+    </div> -->
+    
+    
+    <!-- <div class="parent">
+           <img id="playbutton" src="playbutton.svg" alt="playbutton" height="" width="">
+        <div class="view_Card">
+            
+            <div class="image">
+                <img style="border-radius: 6px;"    src="https://i.scdn.co/image/ab67706f00000002c0218d696fe002d02e974373" alt="image" height="100%" width="100%">
+                
+                
+            </div>
+     </div>
+
+     <div class="bottom_banner">
+         <span id="banner"><h4>Acoustic Throwbacks</h4>
+            <div>Big hits from the world of acoustics.</div></span>
+            
+        </div>
+    </div> -->
+
+    <!-- <div class="parent">
+        <img id="playbutton" src="playbutton.svg" alt="playbutton" height="" width="">
+
+        <div class="view_Card">
+            
+            <div class="image">
+                <img style="border-radius: 6px;"    src="https://i.scdn.co/image/ab67706f0000000295d7470bdc424da6b4f41eeb" alt="image" height="100%" width="100%">
+                
+                
+            </div>
+     </div>
+
+     <div class="bottom_banner">
+         <span id="banner"><h4>2010s Hip-Hop</h4>
+            <div>Taking it back to the 2010s. Cover: Cordae</div></span>
+            
+        </div>
+    </div> -->
+
+    <!-- <div class="parent">
+        <img id="playbutton" src="playbutton.svg" alt="playbutton" height="" width="">
+
+        <div class="view_Card">
+            
+            <div class="image">
+                <img style="border-radius: 6px;"    src="https://i.scdn.co/image/ab67706f0000000289c95313034a9d394caf9206" alt="image" height="100%" width="100%">
+                
+                
+            </div>
+     </div>
+
+     <div class="bottom_banner">
+         <span id="banner"><h4>2000s Hip-Hop</h4>
+            <div>Taking it back to the 2000s. Cover: Lil Wayne</div></span>
+            
+        </div>
+    </div> -->
+
+
+   </div>
+</div>
+
+
+
+<!-- play bar button -->
+
+<div class="playbar">
+    
+  
+    <div id="album_image"><img id="img_album"></div>
+    <div id="song_name_outer"><p id="song_name"></p></div>
+
+    <div id="song_bar">
+        <div id="current_time">0:00</div>
+        <div id="progress_bar"><div id="seeker"><!--<input type="range" id="seek-bar" value="0" min="0" max="100">--></div></div>
+        <div id="total_duration">0:00</div>
+    </div>
+
+    <div id="song_control">
+
+        
+        <div id="shuffle"><button id="shuffle_music"><img src="shuffle.svg" id="shuffle_logo"  height="22px" width="30px" alt="Repeat"></button></div>
+        
+        
+        
+        <div class="songbutton">
+            <audio id="audio_player" controls style="visibility: hidden; width: 0px;" >
+                
+            </audio>
+            <button class="previous play_btn" onclick="previous()"><img src="previous.svg" alt="Previous" height="33px" width="33px"></button>
+            <button class="play " onclick="play()"><img id="play_pause" src="play.svg" alt="play" height="50px" width="50px"></button>
+            <button class="next play_btn" onclick="next()"><img src="next.svg" alt="next" height="33px" width="33px"></button>
+        </div>
+        
+        <div id="loop"><button id="repeat"><img src="repeat.svg" id="repeat_logo"  height="25px" width="30px" alt="Repeat"></button></div>
+        <div class="volume">
+            <button id="mute_unmute"><img  id="mute_unmute_img" src="Volume.svg" height="25px" width="30px" alt="volume"></button>
+            <div id="volume_seekbar">
+                <label class="visually_hidden">
+                    <input type="range" min="0" max="100" step="5" oninput="this.style.setProperty('--value',this.value+'%')" value="--value" class="volume_control" id="control_volume">
+                </label>
+                
+            </div>
+        </div>
+</div>
+    
+
+</div>
+
+
+<div class="footer">
+    <div class="about">
+
+        <ul class="head">
+            <li>Company</li>
+            <li>Communities</li>
+            <li>Useful Links</li>
+            <li>Spotify Plan</li>
+
+        </ul>
+
+        <ul class="data first">
+            <li><a href="/">About</a></li>
+            <li><a href="/">For Artist</a></li>
+            <li><a href="/">Support</a></li>
+            <li><a href="/">Premium Individual</a></li>
+        </ul>
+        <ul class="data second">
+            <li><a href="/">Jobs</a></li>
+            <li><a href="/">Developers</a></li>
+            <li><a href="/">Free Mobile App</a></li>
+            <li><a href="/">Premium Duo</a></li>
+        </ul>
+        <ul class="data third second">
+            <li><a href="/">For the Record</a></li>
+            <li><a href="/">Advertising</a></li>
+            <li><a href="/">           </a></li>
+            <li><a href="/">Premium Family</a></li>
+        </ul>
+        <ul class="data fourth second">
+            <li><a href="/">             </a></li>
+            <li><a href="/">Investors</a></li>
+            <li><a href="/">           </a></li>
+            <li><a href="/">Premium Student</a></li>
+        </ul>
+        <ul class="data fifth second">
+            <li><a href="/">             </a></li>
+            <li><a href="/">Vendors</a></li>
+            <li><a href="/">           </a></li>
+            <li><a href="/">Spotify Free</a></li>
+        </ul>
+
+
+    </div>
+
+
+    <div class="social">
+        <div class="instagram glow_hover"><a href="https://instagram.com/spotify"><img src="instagram.svg" height="25px" width="25px" alt="Instagram"></a></div>
+
+        <div class="twitter glow_hover"><a  href="https://twitter.com/spotify"><img src="twitter.svg" height="25px" width="25px" alt="Twitter"></a></div>
+        
+        <div class="facebook glow_hover"><a  href="https://www.facebook.com/Spotify"><img src="facebook.svg" height="25px" width="25px" alt="Facebook"></a></div>
+    </div>
+
+    <hr>
+
+    <div class="date">
+        <div class="CountryCopyright__Copyright-sc-15djxf4-3 kEIglB"><p data-encore-id="type" class="Type__TypeElement-sc-goli3j-0 jxVDah">© 2024 Spotify AB</p></div>
+    </div>
+</div>
+
+
+
+
+    </div>
+    
+    <script src="index.js"></script>
+    <!-- <script src="server.js"></script> -->
+</body>
+</html>
